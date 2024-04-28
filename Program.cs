@@ -4,7 +4,7 @@ var consoleInput = Console.ReadLine(); // Ввод строки с консол�
 var flag = false;
 while (!flag) // Пока переменная consoleInput не будет иметь значение - бусконечный цикл
 {
-    if (consoleInput != null && string.IsNullOrEmpty(consoleInput)) // Если consoleInput имеет значение
+    if (consoleInput != null && !string.IsNullOrEmpty(consoleInput)) // Если consoleInput имеет значение
     {
         flag = true;
         var inputArray = consoleInput.Split(" "); // Преобразуем строку в массив, использую в качестве раздилител пробел
